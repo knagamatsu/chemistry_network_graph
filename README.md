@@ -1,71 +1,88 @@
-# Getting Started with Create React App
+# 化学領域ネットワークグラフ（デモ）
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+このプロジェクトは、化学の様々な領域間の相互関連性を表現するインタラクティブなネットワークグラフのデモです。ReactとReact Force Graphライブラリを使用して、化学分野の動的で魅力的な表現を作成しています。
 
-## Available Scripts
+![demo](chemistry_graph_demo.gif)
 
-In the project directory, you can run:
+## 機能
 
-### `npm start`
+- 化学の異なる領域を表現するインタラクティブなネットワークグラフ
+- ノードとリンクの数をカスタマイズ可能
+- チャージ強度とリンク距離の調整機能
+- クリックによるノード詳細表示
+- 視認性向上のためのリンクホバーエフェクト
+- グラフ再生成機能
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 使用技術
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- react-force-graph
+- Tailwind CSS
 
-### `npm test`
+## 始め方
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 前提条件
 
-### `npm run build`
+- Node.js
+- npm または yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### インストール
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. リポジトリをクローンします：
+   ```
+   git clone https://github.com/your_username/chemistry-network-graph.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. プロジェクトディレクトリに移動します：
+   ```
+   cd chemistry-network-graph
+   ```
 
-### `npm run eject`
+3. 依存関係をインストールします：
+   ```
+   npm install
+   ```
+   または
+   ```
+   yarn install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. 開発サーバーを起動します：
+   ```
+   npm start
+   ```
+   または
+   ```
+   yarn start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. ブラウザを開き、`http://localhost:3000`にアクセスします。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 使用方法
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 入力フィールドを使用してノードとリンクの数を調整
+- スライダーを使用してチャージ強度とリンク距離を変更
+- ノードをクリックして詳細情報を表示
+- リンクにホバーして接続を強調表示
+- 「グラフ再生成」ボタンをクリックして新しいレイアウトを作成
 
-## Learn More
+## カスタマイズ
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`NetworkGraph`コンポーネント内の`chemistryNodes`配列を変更することで、グラフをカスタマイズできます。異なる化学領域や概念を反映するためにノードを追加または削除できます。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 注意事項
 
-### Code Splitting
+これはデモプロジェクトであり、実際の化学データや関係性を正確に反映しているわけではありません。教育目的や視覚化の実験のために作成されています。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## コントリビューション
 
-### Analyzing the Bundle Size
+コントリビューションを歓迎します！プルリクエストを自由に提出してください。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ライセンス
 
-### Making a Progressive Web App
+このプロジェクトはMITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 謝辞
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# chemistry_network_graph
+- React Force Graphライブラリ
+- インスピレーションを与えてくれた化学コミュニティ
